@@ -1,0 +1,65 @@
+//- index.pug 
+doctype html 
+html 
+  head 
+    style 
+      include ../static/style.css 
+body 
+   nav#navbar 
+     ul 
+        div#logo
+            img(src="/static/img/logo.jpg")
+            | DDA
+        li #[a(href="/") Home ]
+        li #[a(href="/") About ]
+        li #[a(href="/") Services ]
+        li #[a(href="/") Class Info ]
+        li #[a(href="/") Contact Us ]
+
+section#introSection 
+    div Welcome to Debasish's Dance Academy 
+    div.small Eat Dance Sleep Repeat 
+
+section#missionSection 
+    h2 Our Mission 
+    div.card 
+      h3 Dance Perfection 
+        div.card-Box
+            div.card-img
+                img(src="../static/img/pic4.jpg")
+            div.card-content 
+                p This is the best dance academy of the universe 
+    
+    div.card 
+      h3 Dance the way you like  
+        div.card-Box
+            div.card-img
+                img(src="../static/img/pic1.jpg")
+            div.card-content 
+                p This is the best dance academy of the universe 
+  
+    div.card 
+      h3 Expert Teaching 
+        div.card-Box
+            div.card-img
+                img(src="../static/img/pic7.jpg")
+            div.card-content 
+                p This is the best dance academy of the universe 
+
+
+section#sponsorSection 
+    h2 Our Sponsers
+      div#sponsers
+        img(src="/static/img/logo2.png", alt="Sponsor Image", class="spImage")
+        img(src="/static/img/logo9.png", alt="Sponsor Image", class="spImage")
+        img(src="/static/img/logo12.png", alt="Sponsor Image", class="spImage")
+        img(src="/static/img/logo10.png", alt="Sponsor Image", class="spImage")
+        img(src="/static/img/logo14.png", alt="Sponsor Image", class="spImage")
+        img(src="/static/img/logo1.png", alt="Sponsor Image", class="spImage")
+
+footer#footer 
+    | Copyright © 2022 @debasishdanceacandemy.com  |  All rights reserved       
+
+
+script 
+  include ../static/index.js 
